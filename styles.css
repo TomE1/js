@@ -533,7 +533,61 @@ CONTACT PAGE
     font-size: 1rem;
   }
 }
-
+/* editing begins here */
 body {
-  background-color: var(--primary-400);
+  background-color: var(--primary-100);
+}
+
+/* counter app */
+
+.counter-app h1 {
+  border: none;
+  background-color: var(--primary-300);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.counter-div {
+  border: var(--borderViolet);
+  width: 40rem;
+  padding: 1rem;
+  background-color: var(--primary-200);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.counter-div > * {
+  /* margin-bottom: 2rem; */
+}
+
+.count {
+  font-size: 3rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button.subtract {
+  color: var(--primary-100);
+  background-color: var(--red-dark);
+}
+button.reset {
+  color: var(--primary-100);
+  background-color: var(--primary-800);
+}
+button.add {
+  color: var(--primary-100);
+  background-color: var(--green-dark);
 }
